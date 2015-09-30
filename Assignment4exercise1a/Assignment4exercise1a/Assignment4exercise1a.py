@@ -7,6 +7,8 @@
 #
 #------------------------------------------------------------------------------------------------------
 
-number = int(input("enter a number"))
-#The method abs() returns absolute value of x - the (positive) distance between x and zero.
-print ("the absolute number of your number =" , abs(number))
+Fahrenheit = int(input("enter a temprature in fahrenheit: "))
+#(�F - 32) x 5/9 = �C
+Celsius = (Fahrenheit - 32) * 5.0/9.0
+# first gives back the input from first line to confert it to celsius rounded down to 2 decimals
+print ("Temperature:", Fahrenheit, "Fahrenheit = ", (round(Celsius,2)), " C")
